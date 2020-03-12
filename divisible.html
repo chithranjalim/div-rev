@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisibility</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col col-11 col-sm-9 col-lg-7 col-md-7 col-xl-6">
+                <form class="jumbotron" >
+                    <h1>check the divisibility of 8</h1>               
+                    <tr>
+                        <td>NUMBER</td>
+                        <td><input type="text" id="num" class="form-control"></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><button type="button" class="btn btn-success" onclick="div8()">CHECK</button></td>
+                    </tr>
+                    <tr>
+                        <td><p id="#"></p></td>
+                    </tr>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <script>
+        function div8()
+        {
+        var x=parseInt(document.getElementById("num").value); 
+
+        if(x%8==0)
+                {
+                    document.getElementById("#").innerHTML=x+" is divisible by 8";
+                }
+        else
+                {
+                    document.getElementById("#").innerHTML=x+" is not divisible by 8";
+                }
+        };
+    </script>
+</body>
+</html>
